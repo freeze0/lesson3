@@ -14,6 +14,6 @@ import java.util.UUID
 
 @Serializable
 data class Faculty(
-    @SerializedName("id") @PrimaryKey val id: Int = 0, //UUID=UUID.randomUUID(),
+    @SerializedName("id") @PrimaryKey val id: UUID=UUID.randomUUID(),
     @SerializedName("name") @ColumnInfo(name="faculty_name") var name: String=""
 )

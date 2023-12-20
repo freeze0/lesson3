@@ -23,5 +23,5 @@ import java.util.UUID
 data class Group(
     @SerializedName("id") @PrimaryKey var id: UUID = UUID.randomUUID(),
     @SerializedName("name") @ColumnInfo(name= "group_name") var name: String="",
-    @SerializedName("facultyID") @ColumnInfo(name= "faculty_id") var facultyID: Int=0//UUID?=null
+    @SerializedName("facultyID") @ColumnInfo(name= "faculty_id") var facultyID: UUID?=null
 )

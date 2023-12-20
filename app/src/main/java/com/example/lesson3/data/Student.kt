@@ -22,7 +22,7 @@ import java.util.UUID
 )
 
 data class Student(
-    @SerializedName("id") @PrimaryKey val id: Int = 0,//UUID = UUID.randomUUID(),
+    @SerializedName("id") @PrimaryKey val id: UUID = UUID.randomUUID(),
     @SerializedName("lastname") var lastname: String="",
     @SerializedName("firstname") var firstname: String="",
     @SerializedName("middlename") var middlename: String="",
